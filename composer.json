@@ -1,0 +1,29 @@
+{
+    "name": "adience/admin_panel",
+    "description": "Backend Admin Panel",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "amrin11",
+            "email": "amrin.zaman03@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Adience\\AdminPanel\\": "src/"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Adience\\AdminPanel\\AdminPanelServiceProvider"
+            ],
+            "aliases": {
+                "AdminPanel": "Adience\\backend\\Facades\\AdminPanel"
+            }
+        }
+    }
+}
