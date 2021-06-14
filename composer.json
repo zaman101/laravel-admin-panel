@@ -1,29 +1,34 @@
 {
-    "name": "adience/admin_panel",
-    "description": "Backend Admin Panel",
+    "name": "zaman101/laravel-admin-panel",
+    "description": "Laravel Backend Admin Panel using AdminLTE 3.",
     "type": "project",
+    "keywords": ["laravel", "admin-panel", "AdminLTE3"],
+    "homepage": "https://github.com/zaman101/laravel-admin-panel",
     "license": "MIT",
     "authors": [
         {
             "name": "amrin11",
-            "email": "amrin.zaman03@gmail.com"
+            "email": "amrin.zaman03@donot.reply"
         }
     ],
-    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "Adience\\AdminPanel\\": "src/"
+            "Zaman101\\LaravelAdminPanel\\": "src"
         }
     },
-    "require": {},
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^8.40"
+    },
     "extra": {
         "laravel": {
             "providers": [
-                "Adience\\AdminPanel\\AdminPanelServiceProvider"
-            ],
-            "aliases": {
-                "AdminPanel": "Adience\\backend\\Facades\\AdminPanel"
-            }
+                "Zaman101\\LaravelAdminPanel\\AdminPanelServiceProvider"
+            ]
         }
-    }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
 }
