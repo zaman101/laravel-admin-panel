@@ -8,17 +8,17 @@ This package contains backend template for laravel framework.
 
 First, install the package via composer:
 
-    composer require zaman101/laravel-adminlte3 dev-master
+    composer require zaman101/laravel-admin-panel dev-master
 
 
 ## Configuration
 
 After updating composer, publish the configuration:
 
-    php artisan vendor:publish --provider="Zaman101\LaravelAdminlte3\AdminPanelServiceProvider"   
+    php artisan vendor:publish --provider="Zaman101\LaravelAdminPanel\AdminPanelServiceProvider"   
     
 You can publish configuration with tag also:
     
-    php artisan vendor:publish --provider="Zaman101\LaravelAdminlte3\AdminPanelServiceProvider" --tag=views
+    php artisan vendor:publish --provider="Zaman101\LaravelAdminPanel\AdminPanelServiceProvider" --tag=views
     
 This will copy the views to resource/backend where you can edit it. Also css are added to public/backend folder.
